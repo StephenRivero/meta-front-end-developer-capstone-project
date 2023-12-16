@@ -1,4 +1,6 @@
 
+/* Header & Nav */
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -6,13 +8,60 @@
   margin: 0 auto;
 }
 
-nav ul {
+ul {
   list-style: none;
   padding-left: 0;
   display: flex;
 }
 
-ul li {
+nav li {
   padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline solid #495E57;
+  text-underline-offset: .3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.company-info img{
+  margin-top: 12px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.company-info p {
+  width: 320px
+}
+
+footer ul {
+  display: block;
+}
+
+footer li {
+  padding: .5rem 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline solid #495E57;
+  text-underline-offset: .3rem;
+  transition: all 0.3s ease-in-out;
 }
 
