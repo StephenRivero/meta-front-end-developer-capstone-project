@@ -2,9 +2,9 @@ import React from 'react'
 
 const Menu = () => {
   return (
-    <div>
+    <section className='menu-container'>
       Menu component
-    </div>
+    </section>
   )
 }
 
