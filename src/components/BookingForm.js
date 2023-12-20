@@ -20,7 +20,7 @@ const BookingForm = () => {
           {/* Number of Guests */}
           <div>
             <label htmlFor="book-guests">Number of Guests:</label>
-            <input type="number" min={1} required/>
+            <input type="number" id='book-guests' min={1} required/>
           </div>
           {/* Occasion */}
           <div>
