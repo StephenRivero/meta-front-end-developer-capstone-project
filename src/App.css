@@ -1,7 +1,11 @@
 
-body{
+body {
   width: 100%;
   margin: 0 auto;
+}
+
+h2 {
+ font-size: 2.5rem;
 }
 
 /* Header & Nav */
@@ -72,7 +76,7 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
-.Banner button {
+button {
   background-color: #F4CE14;
   color: black;
   padding: 14px 18px;
@@ -147,8 +151,54 @@ nav a:hover {
 /* Menu Component */
 
 .menu-container{
-  margin: 110px auto;
-  padding: 10px 13%;
+  margin: 9rem auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 51px;
+}
+
+.menus {
+ display: grid;
+ grid-template-columns: 320px 320px 320px;
+ justify-content: space-between;
+}
+
+.menu-items {
+  height: 27rem;
+  width: 320px;
+  background: #a9c8be;
+  border-radius: 8px;
+}
+
+.menu-items img {
+ width: 100%;
+ height: 14rem;
+ border-top-left-radius: 8px;
+ border-top-right-radius: 8px;
+}
+
+.menu-description {
+  padding: 0 1rem;
+}
+
+.menu-description .description {
+  margin: 0;
+  height: 84px;
+}
+
+.order-btn{
+  padding: 8px 12px;
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /* Footer */
