@@ -13,12 +13,13 @@ const Banner = () => {
         <Link to="/booking">
           <button aria-label='On Click'>Reserve a table</button>
         </Link>
+        <img src={bannerImg} alt="Banner Img" className='banner-img' />
       </div>
 
       {/* Banner Image */}
-      <div className='banner-img'>
+      {/* <div className='banner-img'>
         <img src={bannerImg} alt="Banner Img" />
-      </div>
+      </div> */}
     </section>
   )
 }
