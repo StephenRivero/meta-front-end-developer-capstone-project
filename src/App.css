@@ -151,7 +151,7 @@ button {
 /* Menu Component */
 
 .menu-container{
-  margin: 9rem auto;
+  margin: 9rem auto 5rem;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -207,7 +207,7 @@ footer section {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
 }
 
 .company-info img{
@@ -230,12 +230,25 @@ footer li {
 
 footer a {
   text-decoration: none;
+  color: black;
 }
 
 footer a:hover {
   text-decoration: underline solid #495E57;
   text-underline-offset: .3rem;
   transition: all 0.3s ease-in-out;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  background: #495e57;
+  padding: 1rem 0;
+}
+
+.copyright a {
+  font-weight: 600;
+  color: white;
 }
 
 

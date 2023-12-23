@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../images/Logo .svg'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -37,6 +38,11 @@ const Footer = () => {
           </ul>
         </div>
       </section>
+      <div className='copyright'>
+        <Link to="https://stephenrivero.vercel.app/" target='_blank'>
+          Stephen Rivero 2023 © All rights reserved
+        </Link>
+      </div>
     </footer>
   )
 }
