@@ -4,18 +4,6 @@ body {
   margin: 0 auto;
 }
 
-/* li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-} */
-
 h2 {
  font-size: 2.5rem;
 }
@@ -311,6 +299,9 @@ footer a:hover {
 
 
 @media screen and (max-width: 1279px) {
+
+  /* Header & Nav */
+
   header {
     padding: 0 .5rem;
   }
@@ -344,8 +335,53 @@ footer a:hover {
     transition: all 0.3s ease-in-out;
   }
 
-  .hamburger-bar{
+  .hamburger-bar {
     background: #333333;
+  }
+
+  /* Banner Section */
+
+  .Banner {
+    padding: 2rem 0;
+  }
+
+  .Banner div {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .Banner h2 {
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+
+  .Banner h3 {
+    width: 100vw;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  .Banner p {
+    text-align: center;
+    font-size: 12px;
+    padding: 0 28px;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  .banner-img-mobile {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .Banner button {
+    font-size: 16px;
   }
 }
 
