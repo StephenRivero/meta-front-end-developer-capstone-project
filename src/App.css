@@ -66,9 +66,9 @@ nav li {
   padding: 1rem;
 }
 
-nav li:nth-child(7) {
+/* nav li:nth-child(7) {
   padding-right: 0;
-}
+} */
 
 nav a {
   text-decoration: none;
@@ -307,7 +307,7 @@ footer a:hover {
     display: flex;
     background: #333333;
     z-index: 1000;
-    padding: 20px 0;
+    padding: 52px 0;
   }
 
   .navbar {
@@ -346,7 +346,7 @@ footer a:hover {
   }
 
   .Banner h2 {
-    margin-bottom: 0;
+    margin: 0;
     font-size: 32px;
   }
 
@@ -435,6 +435,10 @@ footer a:hover {
     align-items: center;
     padding: 0;
     margin: 0;
+  }
+
+  nav li:nth-child(7) {
+    padding-right: 0;
   }
 
   /* Banner section */
