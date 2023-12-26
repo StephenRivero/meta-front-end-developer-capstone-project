@@ -66,6 +66,10 @@ nav li {
   padding: 1rem;
 }
 
+nav li:nth-child(7) {
+  padding-right: 0;
+}
+
 nav a {
   text-decoration: none;
   color: black
@@ -87,7 +91,6 @@ nav a:hover {
 
 .Banner div {
   max-width: 1000px;
-  margin: -2rem auto 0;
   position: relative;
 }
 
@@ -441,10 +444,10 @@ footer a:hover {
   }
 
   .Banner div {
-    max-width: 1000px;
     margin: 0 auto 0;
+    padding: 0;
     justify-content: flex-start;
-    position: relative;
+    /* position: relative; */
   }
 
   .Banner h2 {
