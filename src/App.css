@@ -4,10 +4,6 @@ body {
   margin: 0 auto;
 }
 
-h2 {
- font-size: 2.5rem;
-}
-
 /* Header & Nav */
 
 .header-wrapper {
@@ -97,14 +93,6 @@ nav a:hover {
 
 .Banner h2 {
   color: #F4CE14;
-  font-size: 40px;
-}
-
-.Banner p {
-  font-size: 20px;
-  max-width: 520px;
-  line-height: 1.5;
-  margin-bottom: 30px;
 }
 
 button {
@@ -237,7 +225,6 @@ footer section {
 }
 
 .company-info img{
-  /* margin-top: 12px; */
   cursor: pointer;
   width: 200px;
 }
@@ -297,7 +284,7 @@ footer a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 320px) {
 
   /* Header & Nav */
 
@@ -340,6 +327,10 @@ footer a:hover {
 
   /* Banner Section */
 
+  .mobile-hidden {
+    display: none;
+  }
+
   .Banner {
     padding: 2rem 0;
   }
@@ -364,11 +355,10 @@ footer a:hover {
   }
 
   .Banner p {
+    width: 210px;
+    margin: 1rem 10vw 2rem;
     text-align: center;
     font-size: 12px;
-    /* padding: 0 28px; */
-    margin: 1rem 3rem 2rem;
-    width: 320px;
   }
 
   .banner-img {
@@ -379,20 +369,12 @@ footer a:hover {
     width: 200px;
     height: 200px;
     border-radius: 20px;
-    /* margin: 0 auto; */
+    margin: auto 10vw;
   }
 
   .Banner button {
     font-size: 16px;
-    margin: 0 10vw;
-  }
-}
-
-
-
-@media screen and (min-width: 320px) {
-  .mobile-hidden {
-    display: none;
+    margin: 0 18vw;
   }
 }
 
@@ -400,6 +382,7 @@ footer a:hover {
   .Banner p {
     padding: 0 18vw;
     margin: 1rem 1rem 2rem;
+    width: 320px;
   }
 
   .mobile-hidden {
@@ -413,20 +396,88 @@ footer a:hover {
   }
 }
 
-/* @media screen and (min-width: 1024px) {
-  .Banner p {
-    
-  }
-} */
-
 @media screen and (min-width: 1280px) {
-  .Banner p {
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  nav a {
+    color: black;
+  }
+
+  nav a:hover {
+    text-decoration: underline solid black;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
     padding: 0;
+    margin: 0;
+  }
+
+  /* Banner section */
+
+  .Banner {
+    padding: 5rem 0;
+  }
+
+  .Banner div {
+    max-width: 1000px;
+    margin: 0 auto 0;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .Banner h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  .Banner h3 {
+    text-align: left;
+    font-size: 20px;
+    margin: 4px 0 8px;
+  }
+
+  .Banner p {
+    font-size: 20px;
+    width: 520px;
+    line-height: 1.5;
+    text-align: left;
     margin: 1rem 0 2rem;
+    padding: 0;
   }
 
   .banner-img-mobile {
     display: none;
+  }
+
+  .Banner button {
+    font-size: 16px;
+    margin: 0 30vw 0 0;
+  }
+
+  .banner-img {
+    display: block;
   }
 }
 
