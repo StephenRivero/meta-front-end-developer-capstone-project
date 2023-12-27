@@ -15,12 +15,12 @@ const Menu = () => {
           recipes.map(recipes =>
             <div key={recipes.id} className='menu-items'>
               <img src={recipes.image} alt="Recipe portrait" />
-              <div className='menu-description'>
+              <div className='menu-details'>
                 <div className='menu-header'>
                   <h5>{recipes.title}</h5>
                   <p>${recipes.price}</p>
                 </div>
-                <p className='description'>{recipes.description}</p>
+                <p className='menu-description'>{recipes.description}</p>
                 <button className='order-btn'>Order Now</button>
               </div>
             </div>
