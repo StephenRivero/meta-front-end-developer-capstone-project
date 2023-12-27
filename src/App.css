@@ -66,10 +66,6 @@ nav li {
   padding: 1rem;
 }
 
-/* nav li:nth-child(7) {
-  padding-right: 0;
-} */
-
 nav a {
   text-decoration: none;
   color: black
@@ -379,6 +375,16 @@ footer a:hover {
     font-size: 16px;
     margin: 0 18vw;
   }
+
+  /* Booking section */
+
+  .booking-form {
+    margin: 1rem .5rem;
+  }
+
+  .booking-form fieldset {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -397,6 +403,20 @@ footer a:hover {
   .Banner p {
     margin: 1rem 4rem 2rem;
   }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* Booking section */
+  
+  .booking-form {
+    margin: 3rem auto;
+  }
+  
+  .booking-form fieldset {
+    padding: 1rem;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -451,7 +471,6 @@ footer a:hover {
     margin: 0 auto 0;
     padding: 0;
     justify-content: flex-start;
-    /* position: relative; */
   }
 
   .Banner h2 {
@@ -486,5 +505,6 @@ footer a:hover {
   .banner-img {
     display: block;
   }
+
 }
 
