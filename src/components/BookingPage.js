@@ -1,10 +1,10 @@
 import React from 'react'
 import BookingForm from './BookingForm'
 
-const Booking = () => {
+const BookingPage = () => {
   return (
     <BookingForm />
   )
 }
 
-export default Booking
+export default BookingPage
