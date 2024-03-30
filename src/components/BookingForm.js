@@ -9,11 +9,12 @@ const BookingForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.SubmitForm(e);
+    props.submitForm(e);
   }
 
   const handleDateChange = (e) => {
     setDate(e);
+    props.dispatch(e)
   }
 
   const availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
@@ -51,7 +52,7 @@ const BookingForm = (props) => {
             </select>
           </div>
           {/* Reservation Button */}
-          <div className='reservation-button'>
+          <div className='reservation-button' onClick = {handleSubmit}>
             <button>Make Your Reservation</button>
           </div>
         </fieldset>
