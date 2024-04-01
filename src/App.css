@@ -161,6 +161,17 @@ button {
   cursor: pointer;
 }
 
+.confirm {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  h1 {
+    span {
+      color: blue;
+    }
+  }
+}
+
 /* Menu Component */
 
 .menu-container{
